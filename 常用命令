@@ -8,3 +8,19 @@
   git add  #加文件名或者目录，如果是目录则递归该目录。将目标文件的快照放入暂存区域，同时未曾跟踪过的文件标记为需要跟踪。
   git commit #提交更新
   git commit -a -m "" #自动将所有已跟踪文件提交到暂存区然后直接提交更新
+  git rm #删除文件
+  git rm --cached #停止跟踪但不删除文件
+  git mv <old> <new> #修改文件名
+3.查看提交历史：
+  git log #查看所有文件提交历史
+  git log -p #查看每次提交的差异
+
+
+5.分支：
+  git branch #显示本地所有分支
+  git branch <branchName> #本地创建分支，其实是创建一个指向上次提交对象的指针。
+  git branch -d <branchName> #删除本地分支/标记
+  git checkout <branch/tag> #切换到分支或者标记。此时HEAD指针会指向切换的分支或者标记。
+  git merge <branch> #将指定分支并入当前分支
+  git branch --merged #查看哪些分支已经并入当前分支
+  git branch --no-merged #查看哪些分支未并入当前分支
