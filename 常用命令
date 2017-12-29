@@ -29,4 +29,4 @@
 6.远程操作：
   git fetch <remote> #从远程分支获取内容并更新remote 索引
   git push <remote> <branch> #上传代码并快速合并
-  git push <remote>/<branch/tag>#删除远程分支或tag
+  git push <remote>:<branch/tag>#删除远程分支或tag
