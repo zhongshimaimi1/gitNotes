@@ -1,0 +1,32 @@
+1.创建版本库：
+  git clone url #克隆远程版本库
+  git init  #初始化本地版本库
+2.修改和提交：
+  git status -s #查看工作目录状态
+  git diff #要查看尚未暂存的文件更新了哪些部分
+  git diff --cached #查看已暂存的内容和上次提交时的快照之间的差异。（或者--staged）
+  git add  #加文件名或者目录，如果是目录则递归该目录。将目标文件的快照放入暂存区域，同时未曾跟踪过的文件标记为需要跟踪。
+  git commit #提交更新
+  git commit -a -m "" #自动将所有已跟踪文件提交到暂存区然后直接提交更新
+  git rm #删除文件
+  git rm --cached #停止跟踪但不删除文件
+  git mv <old> <new> #修改文件名
+3.查看提交历史：
+  git log #查看所有文件提交历史
+  git log -p #查看每次提交的差异
+
+
+5.分支：
+  git branch #显示本地所有分支
+  git branch <branchName> #本地创建分支，其实是创建一个指向上次提交对象的指针。
+  git branch -d <branchName> #删除本地分支/标记
+  git checkout <branch/tag> #切换到分支或者标记。此时HEAD指针会指向切换的分支或者标记。
+  git merge [reomte/]<branch> #将指定分支并入当前分支(指定分支可以是远程分支)
+  git branch --merged #查看哪些分支已经并入当前分支
+  git branch --no-merged #查看哪些分支未并入当前分支
+  git checkout -b <newBranch>  [oldBranch] #从oldBranch创建一个分支命令为newBranch并切换到该分支；如果oldBranch不填默认为当前分支
+ 
+6.远程操作：
+  git fetch <remote> #从远程分支获取内容并更新remote 索引
+  git push <remote> <branch> #上传代码并快速合并
+  git push <remote>:<branch/tag>#删除远程分支或tag
