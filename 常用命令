@@ -26,7 +26,16 @@
   git branch --no-merged #查看哪些分支未并入当前分支
   git checkout -b <newBranch>  [oldBranch] #从oldBranch创建一个分支命令为newBranch并切换到该分支；如果oldBranch不填默认为当前分支
  
-6.远程操作：
-  git fetch <remote> #从远程分支获取内容并更新remote 索引
+6.标签：
+  git 
+	
+7.远程操作：
+  git remote -v  查看当前的远程库
+  git remote add [shortname] [url] #添加远程仓库
+  git fetch <remote> #从远程分支获取内容并更新remote 索引（用于更新操作。fetch 命令只是将远端的数据拉到本地仓库，并不自动合并到当前工作分支，只有当你确实准备好了，才能手工合并）
+  git pull <remote>  #目的都是要从原始克隆的远端仓库中抓取数据后，合并到工作目录中的当前分支
   git push <remote> <branch> #上传代码并快速合并
   git push <remote>:<branch/tag>#删除远程分支或tag
+
+8.合并：
+  git merge [remote/]branch #将指定分支合并到当前分支
