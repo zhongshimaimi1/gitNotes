@@ -27,7 +27,7 @@
   git checkout -b <newBranch>  [oldBranch] #从oldBranch创建一个分支命令为newBranch并切换到该分支；如果oldBranch不填默认为当前分支
  
 6.标签：
-  git 
+  git :
 	
 7.远程操作：
   git remote -v  查看当前的远程库
