@@ -7,4 +7,4 @@ git config --global core.autocrlf true
 第二句是将文件 checkout 时自动把 LF 转成 CRLF，check in 时自动把 CRLF 转成 LF
 3.工作目录下文件的状态：已跟踪和未跟踪。
 4.
-
+6.
